@@ -1,0 +1,138 @@
+/* Styles for the body */
+body {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+/* Mixin for centering elements */
+@mixin center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the first box */
+.box1 {
+    @include center-element;
+    height: 300px;
+    background-color: #8ccff7;
+}
+
+/* Styles for the middle box inside box1 */
+.middle-box {
+    @include center-element;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/400);
+}
+
+/* Styles for the second box */
+.box2 {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+/* Styles for items within box2 */
+.item {
+    &:hover {
+        background-color: #444; /* Hover color */
+    }
+    background-color: #4e89ae;
+    padding: 20px;
+}
+
+/* Styles for the third box */
+.box3 {
+    @include center-element;
+    padding: 2%;
+}
+
+/* Styles for circles within box3 */
+.circle {
+    @include center-element;
+    width: 100px; 
+    height: 100px; 
+    margin: 10px;
+    background-color: #4e89ae; 
+    &:hover {
+        background-color: #444; 
+    }
+}
+
+/* Styles for individual circles */
+.circle1 {
+    border-radius: 70px;
+}
+
+.circle2 {
+    border-radius: 80px;
+}
+
+.circle3 {
+    border-radius: 90px;
+}
+
+.circle4 {
+    border-radius: 100px;
+}
+
+/* Styles for the footer */
+footer {
+    @include center-element;
+    height: 50px;
+    background-color: #8ccff7;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+    .middle-box {
+        @include center-element;
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        background-image: url(https://via.placeholder.com/300);
+    }
+    .box1 {
+        @include center-element;
+        height: 250px;
+        background-color: #8ccff7;
+    }
+    footer {
+        @include center-element;
+        height: 50px;
+        background-color: #8ccff7;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .middle-box {
+        @include center-element;
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-image: url(https://via.placeholder.com/200);
+    }
+    .box1 {
+        @include center-element;
+        height: 200px;
+        background-color: #8ccff7;
+    }
+    footer {
+        @include center-element;
+        height: 50px;
+        background-color: #8ccff7;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .box3 {
+        @include center-element;
+        flex-direction: column;
+    }
+}

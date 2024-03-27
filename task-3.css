@@ -1,0 +1,159 @@
+/* Styles for the body */
+body {
+    margin: auto;
+  }
+  
+  /* Styles for the first box */
+  .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #8ccff7;
+  }
+  
+  /* Styles for the middle box inside box1 */
+  .middle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/400);
+  }
+  
+  /* Styles for the second box */
+  .box2 {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  
+  /* Hover effect for items */
+  .item:hover {
+    background-color: #444; /* Hover color */
+  }
+  
+  /* Styles for individual items */
+  .item1 {
+    background-color: #4e89ae;
+    padding: 20px;
+  }
+  
+  .item2 {
+    background-color: #43658b;
+    padding: 20px;
+  }
+  
+  .item3 {
+    background-color: #ed6663;
+    padding: 20px;
+  }
+  
+  .item4 {
+    background-color: #ffa372;
+    padding: 20px;
+  }
+  
+  /* Styles for the third box */
+  .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+  
+  /* Styles for circles within box3 */
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #4e89ae;
+    margin: 10px;
+  }
+  
+  /* Hover effect for circles */
+  .circle:hover {
+    background-color: #444;
+  }
+  
+  /* Styles for individual circles */
+  .circle1 {
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: #4e89ae;
+  }
+  
+  .circle2 {
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: #43658b;
+  }
+  
+  .circle3 {
+    border-radius: 90px;
+    width: 90px;
+    height: 90px;
+    background-color: #ed6663;
+  }
+  
+  .circle4 {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #ffa372;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #8ccff7;
+  }
+  
+  /* Media queries */
+  @media (max-width: 800px) {
+    .middle-box {
+      height: 250px;
+      width: 250px;
+      background-size: cover;
+      background-image: url(https://via.placeholder.com/300);
+    }
+    .box1 {
+      height: 250px;
+    }
+    footer {
+      height: 50px;
+      margin-bottom: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .middle-box {
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-image: url(https://via.placeholder.com/200);
+    }
+    .box1 {
+      height: 200px;
+    }
+    footer {
+      height: 50px;
+      margin-bottom: auto;
+    }
+  }
+  
+  @media (max-width: 620px) {
+    .box3 {
+      flex-direction: column;
+    }
+  }
+  
